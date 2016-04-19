@@ -20,6 +20,27 @@ body {
 a.navbar-brand img {
   width: 190px; }
 
+ul.navbar-icons > li > a > span {
+  font-size: 20px;
+  padding-top: 10px; }
+
+ul.navbar-icons > li > a.shopping-cart {
+  position: relative; }
+
+ul.navbar-icons > li > a.shopping-cart span.items {
+  position: absolute;
+  display: block;
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  background-color: #d7396c;
+  top: -5px;
+  right: -15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 23px;
+  font-family: sans-serif; }
+
 ul.dropdown-menu {
   background-color: #383838;
   border-radius: 0px;
@@ -37,6 +58,11 @@ ul.dropdown-menu > li > a:hover {
   background-color: #3ec3d4;
   color: #ffffff; }
 
+ul.dropdown-menu > li > a:hover > span.light-blue,
+ul.dropdown-menu > li > a:hover > span.light-red {
+  color: #ffffff;
+  border-color: #ffffff; }
+
 ul.dropdown-menu > li > a > span {
   display: block;
   float: right;
@@ -46,7 +72,7 @@ ul.dropdown-menu > li > a > span {
   font-weight: bold;
   margin-top: -3px; }
 
-ul.dropdown-menu > li > a > span.red {
+ul.dropdown-menu > li > a > span.light-red {
   border: 1px #f25050 solid;
   color: #f25050; }
 
