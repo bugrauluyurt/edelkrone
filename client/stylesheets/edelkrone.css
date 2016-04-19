@@ -1,0 +1,127 @@
+body {
+  font-weight: 200; }
+
+.navbar-inverse {
+  background-color: #383838; }
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: #101010;
+  background-color: #383838; }
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: #383838; }
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff; }
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: #464545; }
+
+a.navbar-brand img {
+  width: 190px; }
+
+ul.dropdown-menu {
+  background-color: #383838;
+  border-radius: 0px;
+  border: none;
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+ul.dropdown-menu > li > a {
+  color: #ffffff;
+  padding: 8px 14px;
+  font-weight: 200;
+  border-bottom: 1px #818181 solid; }
+
+ul.dropdown-menu > li > a:hover {
+  background-color: #3ec3d4;
+  color: #ffffff; }
+
+ul.dropdown-menu > li > a > span {
+  display: block;
+  float: right;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 3px 10px;
+  font-weight: bold;
+  margin-top: -3px; }
+
+ul.dropdown-menu > li > a > span.red {
+  border: 1px #f25050 solid;
+  color: #f25050; }
+
+ul.dropdown-menu > li > a > span.light-blue {
+  border: 1px #3ec3d4 solid;
+  color: #3ec3d4; }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  a.navbar-brand img {
+    width: 120px; } }
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+  a.navbar-brand img {
+    width: 120px; } }
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+  a.navbar-brand img {
+    width: 120px; } }
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+  .navbar-inverse {
+    height: 69px; }
+
+  a.navbar-brand img {
+    width: 190px !important; }
+
+  li.dropdown > a, li.nav-btn-n a {
+    height: 69px;
+    padding-top: 25px; }
+
+  ul.dropdown-menu.lg-menu > li > a {
+    width: 270px; } }
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */ }
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */ }
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+  .navbar-inverse {
+    height: 69px; }
+
+  a.navbar-brand img {
+    width: 190px !important; }
+
+  li.dropdown > a, li.nav-btn-n a {
+    height: 69px;
+    padding-top: 25px; }
+
+  ul.dropdown-menu.lg-menu > li > a {
+    width: 270px; } }
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+  .navbar-inverse {
+    height: 69px; }
+
+  a.navbar-brand img {
+    width: 190px !important; }
+
+  li.dropdown > a, li.nav-btn-n a {
+    height: 69px;
+    padding-top: 25px; }
+
+  ul.dropdown-menu.lg-menu > li > a {
+    width: 270px; } }
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */ }
+
+/*# sourceMappingURL=edelkrone.css.map */
