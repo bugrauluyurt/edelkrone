@@ -8,6 +8,10 @@ $logo-width: 190px;
 $logo-width-min: 120px;
 $dropdown-menu-width: 270px;
 
+* {
+	@include transition(all 0.3s ease);
+}
+
 body {
 	font-weight:200;
 }
@@ -35,6 +39,10 @@ body {
 
 a.navbar-brand img {
 	width:$logo-width;
+}
+
+ul.navbar-icons > li > a {
+	float:right;
 }
 
 ul.navbar-icons > li > a > span {
@@ -96,6 +104,10 @@ ul.dropdown-menu > li > a > span{
 	padding:3px 10px;
 	font-weight:bold;
 	margin-top:-3px;
+}
+
+ul.dropdown-menu > li > a > span.firefox{
+	margin-top:-23px !important;
 }
 
 ul.dropdown-menu > li > a > span.light-red{

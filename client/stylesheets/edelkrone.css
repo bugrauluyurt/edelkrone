@@ -1,3 +1,8 @@
+* {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
 body {
   font-weight: 200; }
 
@@ -19,6 +24,9 @@ body {
 
 a.navbar-brand img {
   width: 190px; }
+
+ul.navbar-icons > li > a {
+  float: right; }
 
 ul.navbar-icons > li > a > span {
   font-size: 20px;
@@ -74,6 +82,9 @@ ul.dropdown-menu > li > a > span {
   padding: 3px 10px;
   font-weight: bold;
   margin-top: -3px; }
+
+ul.dropdown-menu > li > a > span.firefox {
+  margin-top: -23px !important; }
 
 ul.dropdown-menu > li > a > span.light-red {
   border: 1px #f25050 solid;
