@@ -16,6 +16,15 @@ body {
 	font-weight:200;
 }
 
+.hidden {
+	display:none;
+}
+
+.navbar {
+	margin-bottom:0px;
+	border-bottom:1px #ffffff solid;
+}
+
 textarea:focus, input:focus{
     outline: none;
 }
@@ -32,6 +41,7 @@ nav.navbar {
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
     border-color: #101010;
     background-color: $nav-color;
+    border-bottom:1px solid #ffffff;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
@@ -75,6 +85,7 @@ ul.navbar-icons > li > a.search-bar {
 		font-size:14px;
 		color:#ffffff;
 	}
+	float:right;
 }
 
 ul.navbar-icons > li > a.search-bar.search-bar-absolute {
@@ -206,6 +217,29 @@ div.shopping-cart-section div {
 	min-height:45px;
 }
 
+div.youtube-container {
+	padding-left:0px;
+	padding-right:0px;
+}
+
+.videowrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    margin-top:-120px;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 
 // Media Queries
@@ -225,6 +259,16 @@ and (max-device-width : 480px) {
 		max-height:620px;
 	}
 
+}
+
+// Smartphones custom
+@media only screen 
+and (min-device-width : 481px) 
+and (max-device-width : 668px) {
+/* Styles */
+	ul.navbar-icons > li > a.search-bar.search-bar-absolute {
+		left:0px;
+	}
 }
 
 /* Smartphones (landscape) ----------- */
@@ -251,7 +295,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) {
 /* Styles */
 	.navbar-inverse {
-		height:69px;
+		height:70px;
 	}
 
 	a.navbar-brand img {
@@ -290,7 +334,7 @@ and (orientation : portrait) {
 and (min-width : 1224px) {
 /* Styles */
 	.navbar-inverse {
-		height:69px;
+		height:70px;
 	}
 
 	a.navbar-brand img {
@@ -311,22 +355,7 @@ and (min-width : 1224px) {
 @media only screen 
 and (min-width : 1824px) {
 /* Styles */
-	.navbar-inverse {
-		height:69px;
-	}
-
-	a.navbar-brand img {
-		width:$logo-width !important;
-	}
-
-	li.dropdown > a, li.nav-btn-n a {
-		height:69px;
-		padding-top:25px;
-	}
-
-	ul.dropdown-menu.lg-menu > li > a{
-		width:$dropdown-menu-width;
-	}
+	
 }
 
 /* iPhone 4 ----------- */
@@ -334,29 +363,5 @@ and (min-width : 1824px) {
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
-}
-
-/* Custom */
-@media only screen 
-and (max-width : 768px)
-and (min-width : 1024px)
- {
-/* Styles */
-	.navbar-inverse {
-		height:69px;
-	}
-
-	a.navbar-brand img {
-		width:$logo-width !important;
-	}
-
-	li.dropdown > a, li.nav-btn-n a {
-		height:69px;
-		padding-top:25px;
-	}
-
-	ul.dropdown-menu.lg-menu > li > a{
-		width:$dropdown-menu-width;
-	}
 }
 

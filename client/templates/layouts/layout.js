@@ -1,6 +1,5 @@
 const $browser = require('/node_modules/jquery.browser/dist/jquery.browser.js');
 
-
 Template.layout.rendered = function() {
 	new WOW().init();
 
@@ -11,9 +10,11 @@ Template.layout.rendered = function() {
 	}
 
 	// Hide the close button and the search-bar
-	$('.search-close-button').hide();
-	$('.search-bar').hide();
-	$('.shopping-cart-section').hide();
+	$('.search-close-button').removeClass('hidden').hide();
+	$('.search-bar').removeClass('hidden').hide();
+	$('.shopping-cart-section').removeClass('hidden').hide();
+
+	// Shopping cart hover function
 	$('.shopping-cart').hover(
 		function(){
 			$('.shopping-cart-section').show();
