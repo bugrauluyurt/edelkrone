@@ -27,10 +27,19 @@ onYouTubeIframeAPIReady = function () {
         },
         playerVars: {
         	rel: 0,
-        	controls: 0
+        	controls: 0,
+        	wmode: "transparent"
         },
 
         suggestedQuality: "hd720"
     });
 };
 YT.load();
+
+Template.index.helpers({
+	// 'checkValue': function(val1, val2){
+	// 	if(val1 == val2){
+	// 		return "selected";
+	// 	}
+	// }
+});
