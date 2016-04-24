@@ -17,7 +17,7 @@ onYouTubeIframeAPIReady = function () {
 
             onReady: function (event) {
                 // Play video when player ready.
-                // event.target.playVideo();
+                event.target.playVideo();
             },
             onStateChange: function(e){
 		        if (e.data === YT.PlayerState.ENDED) {

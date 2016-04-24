@@ -79,6 +79,18 @@ textarea:focus, input:focus, button:focus{
    visibility: hidden;
 }
 
+span.red {
+	color:$light-red;
+}
+
+span.blue {
+	color:$light-blue;
+}
+
+span.gray {
+	color:#818181;
+}
+
 // Burst Star Start
 .burst-36 {
  position: relative;
@@ -849,7 +861,6 @@ div#coverSection {
 // Fourth row
 #fourthRow {
 	background-color:#ffffff;
-	margin-bottom:200px;
 }
 
 #fourthRow > div:first-child {
@@ -972,6 +983,132 @@ div#coverSection {
 	width:$star-dimension;
 }
 
+#feat_note {
+	border-bottom:1px solid #c6c6c6;
+	padding-bottom:60px;
+	margin-top:20px;
+}
+
+.features-row > div > img {
+	display:block;
+	max-width:110px;
+	margin:0 auto;
+	padding-top:40px;
+}
+
+.features-row {
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+.features-row > div > h3,
+.features-row > div > p {
+	width:100%;
+	text-align:center;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.features-row > div > h3 {
+	text-transform: uppercase;
+	font-size:20px;
+	font-weight: alrightSansBold;
+	margin-bottom:-5px;
+}
+
+.features-row > div > h3 > span{
+	font-size:1.2em;
+}
+
+.features-row > div > p {
+	font-weight: alrightSansRegular;
+	padding-bottom:25px;
+}
+
+.features-row-text {
+	margin-top:110px;
+}
+
+.features-row-text > p > span {
+	font-size:1.3em;
+}
+
+.features-row-text > p {
+	margin-bottom:0px;
+}
+
+.features-row-text > p > a {
+	text-decoration: underline;
+	color:#000000;
+}
+
+.awards {
+	background-color:#ededed;
+	border-bottom:1px solid #c6c6c6;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+.award-images > div > img {
+	max-height:70px;
+	display:block;
+	margin:0 auto;
+	vertical-align: middle;
+}
+
+.footer {
+	background-color:#272727;
+	padding-bottom:50px;
+	padding-top:20px;
+}
+
+#footerLinks {
+	padding-bottom:50px;
+	text-transform:uppercase;
+}
+
+#footerLinks > div > h1 {
+	color:#e4e7e3;
+	font-size:19px;
+	font-weight:bold;
+	padding-bottom:10px;
+}
+#footerLinks > div > ul > li {
+	list-style-type: none;
+	margin-left:-40px;
+	padding-bottom:4px;
+}
+
+#footerLinks > div > ul > li a {
+	font-size:16px;
+	color:#e4e7e3;
+	text-decoration:none;
+}
+
+#copyrightText {
+	border-bottom: 1px solid #898c88;
+	padding:0;
+}
+
+#copyrightText > div {
+	padding-left:10px;
+	padding-right:10px;
+}
+
+#copyrightText > div > p {
+	color:#898c88;
+	font-size:12px;
+	padding-bottom:6px;
+	margin:0;
+}
+
+#copyrightText > div:first-child > p {
+	text-align:left;
+}
+
+#copyrightText > div:nth-child(2) > p {
+	text-align:right;
+}
 
 // Media Queries
 /* Smartphones (portrait and landscape) ----------- */
@@ -1127,6 +1264,31 @@ and (max-device-width : 480px) {
 	.col2 {
 		border-top:3px solid #ffffff;
 	}
+	.features-row > div > p {
+		padding-bottom:0px;
+	}
+	.features-row-text {
+		margin-top:10px;
+		padding-left:15px;
+		padding-right:15px;
+ 	}
+ 	.award-images {
+ 		padding-bottom:40px;
+ 	}
+ 	.award-images > div > img {
+		margin-top:20px;
+	}
+	.award-images > div:nth-child(4) > img {
+		margin-top:30px;
+		margin-left:-40px;
+		width:200px;
+	}
+	#footerLinks {
+		padding-left:40px;
+	}
+	#copyrightText > div > p {
+		font-size:11px;
+	}
 }
 
 // Smartphones custom
@@ -1173,6 +1335,17 @@ and (max-device-width : 737px) {
 		margin-top:5px;
 		margin-bottom:35px;
 	}
+	.features-row-text {
+		margin-top:10px;
+		padding-left:15px;
+		padding-right:15px;
+ 	}
+ 	.award-images > div > img {
+		margin-top:20px;
+	}
+	.award-images {
+ 		padding-bottom:40px;
+ 	}
 }
 
 /* Smartphones (landscape) ----------- */
@@ -1181,6 +1354,9 @@ and (min-width : 321px) {
 /* Styles */
 	a.navbar-brand img {
 		width:$logo-width-min;
+	}
+	.features-row > div > p {
+		padding-bottom:0px;
 	}
 }
 
@@ -1406,6 +1582,13 @@ and (orientation : portrait) {
 		margin-left:310px;
 		margin-bottom:40px;
 	}
+	.award-images > div:nth-child(4) > img {
+		margin-left:-40px;
+		width:200px;
+	}
+	.award-images > div:nth-child(3) > img {
+		margin-left:-10px;
+	}
 }
 
 /* Desktops and laptops ----------- */
@@ -1436,6 +1619,15 @@ and (min-width : 1224px) {
 	} 
 	.col2 {
 		border-left:3px solid #ffffff;
+	}
+	.features-row > div:first-child {
+		border-right:1px solid #d4d4d4;
+	}
+	.features-row > div:nth-child(2) {
+		border-right:1px solid #d4d4d4;
+	}
+	.features-row > div:nth-child(3) {
+		border-right:1px solid #d4d4d4;
 	}
 }
 
