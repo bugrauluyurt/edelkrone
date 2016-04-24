@@ -71,6 +71,14 @@ textarea:focus, input:focus, button:focus{
     outline: none;
 }
 
+.row.row-sp {
+	margin-bottom:8px;
+}
+
+.wow {
+   visibility: hidden;
+}
+
 // Burst Star Start
 .burst-36 {
  position: relative;
@@ -725,7 +733,6 @@ div#coverSection {
 // Third Row Start
 #thirdRow {
 	background-color:#ffffff;
-	margin-bottom:200px;
 }
 
 #thirdRow > div:first-child {
@@ -795,8 +802,6 @@ div#coverSection {
 }
 
 // Third row SliderOne
-
-
 #thirdRow > div:nth-child(2) > img {
 	max-width:450px;
 	margin-left:30px;
@@ -841,6 +846,131 @@ div#coverSection {
 	width:$star-dimension;
 }
 
+// Fourth row
+#fourthRow {
+	background-color:#ffffff;
+	margin-bottom:200px;
+}
+
+#fourthRow > div:first-child {
+	background: rgba(247,247,247,1);
+	background: -moz-linear-gradient(left, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 25%, rgba(253,253,253,1) 51%, rgba(243,243,243,1) 76%, rgba(242,242,242,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(247,247,247,1)), color-stop(25%, rgba(255,255,255,1)), color-stop(51%, rgba(253,253,253,1)), color-stop(76%, rgba(243,243,243,1)), color-stop(100%, rgba(242,242,242,1)));
+	background: -webkit-linear-gradient(left, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 25%, rgba(253,253,253,1) 51%, rgba(243,243,243,1) 76%, rgba(242,242,242,1) 100%);
+	background: -o-linear-gradient(left, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 25%, rgba(253,253,253,1) 51%, rgba(243,243,243,1) 76%, rgba(242,242,242,1) 100%);
+	background: -ms-linear-gradient(left, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 25%, rgba(253,253,253,1) 51%, rgba(243,243,243,1) 76%, rgba(242,242,242,1) 100%);
+	background: linear-gradient(to right, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 25%, rgba(253,253,253,1) 51%, rgba(243,243,243,1) 76%, rgba(242,242,242,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f2f2f2', GradientType=1 );
+}
+
+#fourthRow > div:nth-child(2) {
+	background: rgba(220,228,230,1);
+	background: -moz-linear-gradient(left, rgba(220,228,230,1) 0%, rgba(220,228,230,1) 25%, rgba(220,228,230,1) 51%, rgba(220,228,230,1) 76%, rgba(220,228,230,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(220,228,230,1)), color-stop(25%, rgba(220,228,230,1)), color-stop(51%, rgba(220,228,230,1)), color-stop(76%, rgba(220,228,230,1)), color-stop(100%, rgba(220,228,230,1)));
+	background: -webkit-linear-gradient(left, rgba(220,228,230,1) 0%, rgba(220,228,230,1) 25%, rgba(220,228,230,1) 51%, rgba(220,228,230,1) 76%, rgba(220,228,230,1) 100%);
+	background: -o-linear-gradient(left, rgba(220,228,230,1) 0%, rgba(220,228,230,1) 25%, rgba(220,228,230,1) 51%, rgba(220,228,230,1) 76%, rgba(220,228,230,1) 100%);
+	background: -ms-linear-gradient(left, rgba(220,228,230,1) 0%, rgba(220,228,230,1) 25%, rgba(220,228,230,1) 51%, rgba(220,228,230,1) 76%, rgba(220,228,230,1) 100%);
+	background: linear-gradient(to right, rgba(220,228,230,1) 0%, rgba(220,228,230,1) 25%, rgba(220,228,230,1) 51%, rgba(220,228,230,1) 76%, rgba(220,228,230,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dce4e6', endColorstr='#dce4e6', GradientType=1 );
+}
+
+#fourthRow > div:first-child > img {
+	max-width:375px;
+	margin-left:-15px;
+	margin-top:0px;
+}
+
+#fourthRow > div:first-child > div,
+#fourthRow > div:first-child > div h1,
+#fourthRow > div:first-child > div p, {
+	width:100%;
+	text-align:right;
+}
+
+#fourthRow > div {
+	padding-bottom:30px;
+}
+
+#fourthRow > div:first-child > div.product-text {
+	padding-right: 36px;
+	margin-top:-60px;
+}
+
+#fourthRow > div:first-child > div.product-text h1 {
+	text-transform: uppercase;
+	font-family: alrightSansThin;
+	margin-bottom:0px;
+}
+
+#fourthRow > div:first-child > div.product-text h1 span {
+	font-family: alrightSansBold;
+}
+
+#fourthRow > div:first-child > div.product-text p {
+	line-height: 23px;
+}
+
+#fourthRow > div:first-child > div.burst-star {
+	position:absolute;
+	top:90px;
+	left:330px;
+	height:$star-dimension;
+	width:$star-dimension;
+}
+
+// Fourth row Flex-Tilt Head
+#fourthRow > div:nth-child(2) > img {
+	max-width:300px;
+	margin-left:320px;
+	margin-top:-220px;
+	padding-bottom:20px;
+}
+
+#fourthRow > div:nth-child(2) > div,
+#fourthRow > div:nth-child(2) > div h1,
+#fourthRow > div:nth-child(2) > div p, {
+	width:100%;
+	text-align:left;
+}
+
+#fourthRow > div {
+	padding-bottom:30px;
+}
+
+#fourthRow > div:nth-child(2) > div.product-text {
+	padding-left: 36px;
+	margin-top:0px;
+	padding-top:20px;
+}
+
+#fourthRow > div:nth-child(2) > div.product-text h1 {
+	text-transform: uppercase;
+	font-family: alrightSansThin;
+	margin-bottom:0px;
+}
+
+#fourthRow > div:nth-child(2) > div.product-text h1 span {
+	font-family: alrightSansBold;
+}
+
+#fourthRow > div:nth-child(2) > div.product-text p {
+	line-height: 25px;
+	text-transform: uppercase;
+	font-size:25px;
+	color:#ffffff;
+	width:40px;
+	font-family: alrightSansBold;
+	padding-top:15px;
+	margin-bottom:45px;
+}
+
+#fourthRow > div:nth-child(2) > div.burst-star {
+	position:absolute;
+	top:55px;
+	left:410px;
+	height:$star-dimension;
+	width:$star-dimension;
+}
 
 
 // Media Queries
@@ -955,7 +1085,6 @@ and (max-device-width : 480px) {
 	#thirdRow > div:nth-child(2) > img {
 		max-width:280px;
 		margin-left:10px;
-		margin-top:40px;
 	}
 	#thirdRow > div:nth-child(2) > div.product-text {
 		margin-top:-20px;
@@ -963,6 +1092,40 @@ and (max-device-width : 480px) {
 	#thirdRow > div:nth-child(2) > div.burst-star {
 		top:64px;
 		left:280px;
+	}
+	#fourthRow > div:first-child > img {
+		max-width:250px;
+		margin-left:-15px;
+		margin-top:0px;
+	}
+	#fourthRow > div:first-child > div.product-text {
+		margin-top:0px;
+	}
+	#fourthRow > div:nth-child(2) > img {
+		max-width:280px;
+		margin-left:35px;
+		margin-top:40px;
+	}
+	#fourthRow > div:nth-child(2) > div.product-text {
+		width:100%;
+		text-align:center;
+		margin-left:-15px;
+	}
+	#fourthRow > div:nth-child(2) > div.product-text  h1,
+	#fourthRow > div:nth-child(2) > div.product-text  p
+	{
+		width:100%;
+		text-align:center;
+	}
+	#fourthRow > div:nth-child(2) > div.product-text  p
+	{
+		margin-bottom:20px;
+	}
+	.col1 {
+		border-bottom:3px solid #ffffff;
+	}
+	.col2 {
+		border-top:3px solid #ffffff;
 	}
 }
 
@@ -979,6 +1142,12 @@ and (max-device-width : 737px) {
 	}
 	div#coverSection {
 		display:none;
+	}
+	.col1 {
+		border-bottom:3px solid #ffffff;
+	}
+	.col2 {
+		border-top:3px solid #ffffff;
 	}
 	#soonSection > div:first-child {
 		padding-top:40px;
@@ -1082,6 +1251,12 @@ and (orientation : landscape) {
 	ul.dropdown-menu.lg-menu > li > a{
 		width:$dropdown-menu-width;
 	}
+	.col1 {
+		border-right:3px solid #ffffff;
+	}
+	.col2 {
+		border-left:3px solid #ffffff;
+	}
 	.videowrapper, div.youtube-container div#contestbarSection {
     	margin-top:-87px;
 	}
@@ -1159,6 +1334,28 @@ and (orientation : landscape) {
 	#thirdRow > div:nth-child(2) > div.burst-star {
 		left:340px;
 	}
+	// Fourth row
+	#fourthRow > div:first-child > div.product-text {
+		margin-top:0px;
+	}
+	#fourthRow > div:nth-child(2) > div.product-text {
+		margin-top:0px;
+		margin-bottom:13px;
+	}
+	#fourthRow > div:first-child > img {
+		margin-left:-15px;
+		max-width:340px;
+	}
+	#fourthRow > div:nth-child(2) > img {
+		margin-left:210px;
+		margin-top:-190px;
+	}
+	#fourthRow > div:first-child > div.burst-star {
+		left:260px;
+	}
+	#fourthRow > div:nth-child(2) > div.burst-star {
+		left:340px;
+	}
 }
 /* iPads (portrait) ----------- */
 @media only screen 
@@ -1168,6 +1365,12 @@ and (orientation : portrait) {
 /* Styles */
 	.videowrapper, div.youtube-container div#contestbarSection {
     	margin-top:-68px;
+	}
+	.col1 {
+		border-bottom:3px solid #ffffff;
+	}
+	.col2 {
+		border-top:3px solid #ffffff;
 	}
 	#secondRow > div:nth-child(2) > img {
 		max-width:600px;
@@ -1228,7 +1431,12 @@ and (min-width : 1224px) {
 	.videowrapper, div.youtube-container div#contestbarSection {
     	margin-top:-117px;
 	}
-
+	.col1 {
+		border-right:3px solid #ffffff;
+	} 
+	.col2 {
+		border-left:3px solid #ffffff;
+	}
 }
 
 /* Large screens ----------- */
