@@ -5,5 +5,5 @@ Just for demonstration!
 <img src="/public/Edelkrone_Laptop.gif" width="500"/>
 
 # 375x667
-<img src="/public/Edelkrone_iphone6.gif" width="375"/>
+<img src="/public/Edelkrone_iphone6.gif" width="175"/>
 
